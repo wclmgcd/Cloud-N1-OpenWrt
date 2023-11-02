@@ -8,8 +8,7 @@ on:
       - 'README.md'
       - 'script.sh'
       - 'config.sh'
-  schedule:
-    - cron: 0 8 * * 0
+  
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -18,7 +17,7 @@ env:
   CONFIG_SH: config.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
-  KERNEL_VERSION: 6.1.57
+  KERNEL_VERSION: 5.15.137
 
 jobs:
   build_openwrt:
@@ -154,7 +153,7 @@ jobs:
           刷机固件简介：
             打包日期：${{ env.PACKAGED_OUTPUTDATE }}
             内核版本：${{ env.KERNEL_VERSION }}
-            默认IP：192.168.1.1 默认用户名密码： root/password
+            默认IP：192.168.1.2 默认用户名密码： root/password
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
 
     - name: Remove old Releases
