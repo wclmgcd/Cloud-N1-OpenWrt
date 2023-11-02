@@ -9,9 +9,9 @@ CONFIG_BRCMFMAC_SDIO=y
 CONFIG_BRCMFMAC_USB=y
 CONFIG_BTRFS_PROGS_ZSTD=y
 CONFIG_CGROUPFS_MOUNT_KERNEL_CGROUPS=y
-CONFIG_DOCKER_CGROUP_OPTIONS=y
-CONFIG_DOCKER_NET_MACVLAN=y
-CONFIG_DOCKER_STO_EXT4=y
+# CONFIG_DOCKER_CGROUP_OPTIONS is not set
+# CONFIG_DOCKER_NET_MACVLAN is not set
+# CONFIG_DOCKER_STO_EXT4 is not set
 CONFIG_DRIVER_11AC_SUPPORT=y
 CONFIG_KERNEL_CGROUP_DEVICE=y
 CONFIG_KERNEL_CGROUP_FREEZER=y
@@ -35,14 +35,14 @@ CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED=y
 CONFIG_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED=y
 CONFIG_MBEDTLS_NIST_KW_C=y
 CONFIG_MBEDTLS_RSA_NO_CRT=y
-CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH=y
-CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT=y
-CONFIG_OPENVPN_openssl_ENABLE_LZ4=y
-CONFIG_OPENVPN_openssl_ENABLE_LZO=y
-CONFIG_OPENVPN_openssl_ENABLE_MULTIHOME=y
-CONFIG_OPENVPN_openssl_ENABLE_PF=y
-CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE=y
-CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
+# CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH is not set
+# CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT is not set
+# CONFIG_OPENVPN_openssl_ENABLE_LZ4 is not set
+# CONFIG_OPENVPN_openssl_ENABLE_LZO is not set
+# CONFIG_OPENVPN_openssl_ENABLE_MULTIHOME is not set
+# CONFIG_OPENVPN_openssl_ENABLE_PF is not set
+# CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE is not set
+# CONFIG_OPENVPN_openssl_ENABLE_SMALL is not set
 CONFIG_PACKAGE_6in4=y
 CONFIG_PACKAGE_MAC80211_DEBUGFS=y
 CONFIG_PACKAGE_MAC80211_MESH=y
@@ -66,8 +66,8 @@ CONFIG_PACKAGE_cgroupfs-mount=y
 CONFIG_PACKAGE_chattr=y
 CONFIG_PACKAGE_containerd=y
 CONFIG_PACKAGE_coreutils-nohup=y
-CONFIG_PACKAGE_docker=y
-CONFIG_PACKAGE_dockerd=y
+# CONFIG_PACKAGE_docker is not set
+# CONFIG_PACKAGE_dockerd is not set
 CONFIG_PACKAGE_dosfstools=y
 CONFIG_PACKAGE_f2fs-tools=y
 CONFIG_PACKAGE_f2fsck=y
@@ -189,8 +189,8 @@ CONFIG_PACKAGE_lua-cjson=y
 CONFIG_PACKAGE_lua-maxminddb=y
 CONFIG_PACKAGE_luasocket=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
-CONFIG_PACKAGE_luci-app-adguardhome=y
-CONFIG_PACKAGE_luci-app-aliyundrive-webdav=y
+# CONFIG_PACKAGE_luci-app-adguardhome is not set
+# CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
 CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-arpbind is not set
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_ShadowsocksR_Libev_Client is not set
@@ -202,10 +202,10 @@ CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Trojan is not set
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Xray is not set
 # CONFIG_PACKAGE_luci-app-ddns is not set
-CONFIG_PACKAGE_luci-app-docker=y
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_luci-app-openclash=y
-CONFIG_PACKAGE_luci-app-openvpn-server=y
+# CONFIG_PACKAGE_luci-app-docker is not set
+# CONFIG_PACKAGE_luci-app-dockerman is not set
+# CONFIG_PACKAGE_luci-app-openclash is not set
+# CONFIG_PACKAGE_luci-app-openvpn-server is not set
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
@@ -221,34 +221,34 @@ CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go is not set
 # CONFIG_PACKAGE_luci-app-upnp is not set
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
-CONFIG_PACKAGE_luci-app-vssr=y
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=y
+# CONFIG_PACKAGE_luci-app-vssr is not set
+# CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun is not set
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server is not set
-CONFIG_PACKAGE_luci-app-webadmin=y
-CONFIG_PACKAGE_luci-app-wireguard=y
-CONFIG_PACKAGE_luci-app-zerotier=y
+# CONFIG_PACKAGE_luci-app-webadmin is not set
+# CONFIG_PACKAGE_luci-app-wireguard is not set
+# CONFIG_PACKAGE_luci-app-zerotier is not set
 CONFIG_PACKAGE_luci-compat=y
-CONFIG_PACKAGE_luci-i18n-aliyundrive-webdav-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-aliyundrive-webdav-zh-cn is not set
 CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-docker-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-openvpn-server-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-docker-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-openvpn-server-zh-cn is not set
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-webadmin-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
-CONFIG_PACKAGE_luci-lib-docker=y
+# CONFIG_PACKAGE_luci-i18n-vssr-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-webadmin-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn is not set
+# CONFIG_PACKAGE_luci-lib-docker is not set
 CONFIG_PACKAGE_luci-proto-ipv6=y
-CONFIG_PACKAGE_luci-proto-wireguard=y
+# CONFIG_PACKAGE_luci-proto-wireguard is not set
 CONFIG_PACKAGE_luci-theme-opentomcat=y
 CONFIG_PACKAGE_mount-utils=y
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
 CONFIG_PACKAGE_odhcpd-ipv6only=y
 CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
-CONFIG_PACKAGE_openvpn-easy-rsa=y
-CONFIG_PACKAGE_openvpn-openssl=y
+# CONFIG_PACKAGE_openvpn-easy-rsa is not set
+# CONFIG_PACKAGE_openvpn-openssl is not set
 CONFIG_PACKAGE_parted=y
 CONFIG_PACKAGE_perl=y
 CONFIG_PACKAGE_perl-http-date=y
@@ -311,7 +311,7 @@ CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
 CONFIG_PACKAGE_v2ray-plugin=y
-CONFIG_PACKAGE_wireguard-tools=y
+# CONFIG_PACKAGE_wireguard-tools is not set
 CONFIG_PACKAGE_wireless-regdb=y
 CONFIG_PACKAGE_wpa-cli=y
 CONFIG_PACKAGE_wpad-basic=y
@@ -320,7 +320,7 @@ CONFIG_PACKAGE_xfs-mkfs=y
 CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
-CONFIG_PACKAGE_zerotier=y
+# CONFIG_PACKAGE_zerotier is not set
 CONFIG_PARTED_READLINE=y
 CONFIG_PERL_NOCOMMENT=y
 CONFIG_PERL_THREADS=y
