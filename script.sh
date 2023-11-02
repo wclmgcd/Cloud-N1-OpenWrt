@@ -1,10 +1,10 @@
 #!/bin/bash
 cd openwrt
+# Modify default IP
+sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
-# Add luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package-temp/luci-app-adguardhome
-mv -f package-temp/luci-app-adguardhome package/lean/
-rm -rf package-temp
+#修改密码
+sed -i 's/^root:.*:/root:$1$q6Qf.IUu$Bd2tIMFHYYNOsmsIRBwHC0:19650:0:99999:7:::/g' package/base-files/files/etc/shadow
 
 # Add luci-app-openclash
 git clone https://github.com/vernesong/OpenClash.git package-temp
@@ -20,14 +20,6 @@ rm -rf theme-temp
 default_theme='opentomcat'
 sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
-# Add luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git package-temp/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-vssr.git package-temp/luci-app-vssr
-git clone https://github.com/kenzok8/small.git package-temp/small
-cp -r package-temp/small/* package/lean/
-mv -f package-temp/lua-maxminddb package/lean/
-mv -f package-temp/luci-app-vssr package/lean/
-rm -rf package-temp
 
 # Add luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
