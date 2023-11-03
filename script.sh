@@ -15,6 +15,14 @@ mv -f package-temp/lua-maxminddb package/lean/
 mv -f package-temp/luci-app-vssr package/lean/
 rm -rf package-temp
 
+# Add luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package-temp
+cp -r package-temp/* package/lean/
+rm -rf package-temp
+git clone https://github.com/xiaorouji/openwrt-passwall.git package-temp
+mv -f package-temp/luci-app-passwall package/lean/
+rm -rf package-temp
+
 # Add luci-app-openclash
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package-temp
 mv -f package-temp/luci-app-openclash package/lean/
