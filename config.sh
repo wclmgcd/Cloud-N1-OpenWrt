@@ -188,6 +188,16 @@ CONFIG_PACKAGE_lsblk=y
 CONFIG_PACKAGE_lua-cjson=y
 CONFIG_PACKAGE_lua-maxminddb=y
 CONFIG_PACKAGE_luasocket=y
+CONFIG_PACKAGE_luci-app-autoreboot=n
+CONFIG_PACKAGE_luci-app-wol=n
+CONFIG_PACKAGE_luci-app-filetransfer=n
+CONFIG_PACKAGE_luci-app-nlbwmon=n
+CONFIG_DEFAULT_luci-app-ddns=n
+CONFIG_DEFAULT_ddns-scripts_aliyun=n
+CONFIG_DEFAULT_ddns-scripts_dnspod=n
+CONFIG_PACKAGE_ddns-scripts=n
+CONFIG_PACKAGE_ddns-scripts_aliyun=n
+CONFIG_PACKAGE_ddns-scripts_dnspod=n
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
 # CONFIG_PACKAGE_luci-app-adguardhome is not set
 # CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
@@ -330,6 +340,8 @@ CONFIG_SING_BOX_WITH_ECH=y
 CONFIG_SING_BOX_WITH_QUIC=y
 CONFIG_SING_BOX_WITH_UTLS=y
 CONFIG_SING_BOX_WITH_WIREGUARD=y
+CONFIG_SING_BOX_WITH_GRPC=y
+CONFIG_SING_BOX_WITH_GVISOR=y
 # CONFIG_TARGET_ROOTFS_CPIOGZ is not set
 # CONFIG_TARGET_ROOTFS_EXT4FS is not set
 # CONFIG_TARGET_ROOTFS_INITRAMFS is not set
