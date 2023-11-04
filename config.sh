@@ -74,7 +74,6 @@ CONFIG_PACKAGE_f2fsck=y
 CONFIG_PACKAGE_fdisk=y
 CONFIG_PACKAGE_gawk=y
 CONFIG_PACKAGE_getopt=y
-CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_hostapd-common=y
 CONFIG_PACKAGE_hysteria=y
 CONFIG_PACKAGE_ip6tables=y
@@ -203,21 +202,7 @@ CONFIG_PACKAGE_ddns-scripts_dnspod=n
 # CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
 CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-arpbind is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_ShadowsocksR_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_ShadowsocksR_Libev_Server is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Shadowsocks_Libev_Client is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Shadowsocks_Libev_Server is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Simple_Obfs is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Socks_Server is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Trojan is not set
-# CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Xray is not set
-# CONFIG_PACKAGE_luci-app-ddns is not set
-# CONFIG_PACKAGE_luci-app-docker is not set
-# CONFIG_PACKAGE_luci-app-dockerman is not set
-# CONFIG_PACKAGE_luci-app-openclash is not set
-# CONFIG_PACKAGE_luci-app-openvpn-server is not set
-CONFIG_PACKAGE_luci-app-passwall=y
-CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
+CONFIG_PACKAGE_luci-app-passwall2=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus is not set
@@ -243,7 +228,6 @@ CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-docker-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-openvpn-server-zh-cn is not set
-CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-vssr-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-webadmin-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn is not set
@@ -307,27 +291,20 @@ CONFIG_PACKAGE_ruby-stringio=y
 CONFIG_PACKAGE_ruby-strscan=y
 CONFIG_PACKAGE_ruby-yaml=y
 CONFIG_PACKAGE_runc=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-server=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-server=y
-CONFIG_PACKAGE_sing-box=y
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_tini=y
-CONFIG_PACKAGE_trojan=y
-CONFIG_PACKAGE_trojan-plus=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
 CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
-CONFIG_PACKAGE_v2ray-plugin=y
 # CONFIG_PACKAGE_wireguard-tools is not set
 CONFIG_PACKAGE_wireless-regdb=y
 CONFIG_PACKAGE_wpa-cli=y
 CONFIG_PACKAGE_wpad-basic=y
 CONFIG_PACKAGE_xfs-fsck=y
 CONFIG_PACKAGE_xfs-mkfs=y
-CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_xz=y
 CONFIG_PACKAGE_xz-utils=y
 # CONFIG_PACKAGE_zerotier is not set
@@ -366,7 +343,6 @@ CONFIG_PACKAGE_lua-neturl=y
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM is not set
 CONFIG_PACKAGE_luci-lib-ipkg=y
 CONFIG_PACKAGE_miniupnpd=y
-CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
 CONFIG_PACKAGE_vsftpd-alt=y
 CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
 EOF
