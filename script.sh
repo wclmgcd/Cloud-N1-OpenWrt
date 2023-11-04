@@ -19,8 +19,8 @@ rm -rf package-temp
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package-temp
 cp -r package-temp/* package/lean/
 rm -rf package-temp
-git clone https://github.com/xiaorouji/openwrt-passwall.git package-temp
-mv -f package-temp/luci-app-passwall package/lean/
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package-temp
+mv -f package-temp/luci-app-passwall2 package/lean/
 rm -rf package-temp
 
 # Add luci-app-openclash
