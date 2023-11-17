@@ -296,7 +296,7 @@ CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_tini=y
 CONFIG_PACKAGE_uhttpd=y
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
-CONFIG_PACKAGE_ttyd=y
+CONFIG_PACKAGE_ttyd=n
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
 # CONFIG_PACKAGE_wireguard-tools is not set
