@@ -8,18 +8,18 @@ sed -i 's/^root:.*:/root:$1$q6Qf.IUu$Bd2tIMFHYYNOsmsIRBwHC0:19650:0:99999:7:::/g
 
 # Add luci-app-vssr
 
-rm -rf /feeds/luci/applications/luci-app-homeproxy
-git clone https://github.com/douglarek/luci-app-homeproxy.git  package-temp/luci-app-homeproxy
-mv -f package-temp/luci-app-homeproxy package/
+# Add luci-app-homeproxy
+git clone https://github.com/lxiaya/openwrt-homeproxy.git package-temp
+cp -r package-temp/* package/
 rm -rf package-temp
 
 # Add luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package-temp
-cp -r package-temp/* package/
-rm -rf package-temp
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package-temp
-mv -f package-temp/luci-app-passwall2 package/
-rm -rf package-temp
+# git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package-temp
+# cp -r package-temp/* package/
+# rm -rf package-temp
+# git clone https://github.com/xiaorouji/openwrt-passwall2.git package-temp
+# mv -f package-temp/luci-app-passwall2 package/
+# rm -rf package-temp
 
 
 
