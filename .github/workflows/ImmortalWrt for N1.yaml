@@ -7,11 +7,12 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
- 
+ # schedule:
+ #   - cron: 5 4 * * 5
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: config/N1.config
   DIY_SH: config/diy.sh
   TZ: Asia/Shanghai
@@ -88,7 +89,7 @@ jobs:
       uses: unifreq/openwrt_packit@master
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
-        KERNEL_VERSION_NAME: 5.15.137
+        KERNEL_VERSION_NAME: 5.15.139
         PACKAGE_SOC: s905d
         GZIP_IMGS: .xz
         SW_FLOWOFFLOAD: 0
