@@ -24,3 +24,5 @@ rm -rf package-temp
 
 # Add luci-app-amlogic
 git clone https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
+
+git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
