@@ -38,16 +38,14 @@ CONFIG_PACKAGE_kmod-usb3=y
 
 # luci
 CONFIG_PACKAGE_luci-app-amlogic=y
-CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-openclash=y
-CONFIG_PACKAGE_luci-theme-design=y
-CONFIG_PACKAGE_luci-app-passwall2=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 # other packages
 #CONFIG_PACKAGE_autocore-arm=y
 #CONFIG_PACKAGE_zoneinfo-asia=y
 #CONFIG_PACKAGE_zoneinfo-core=y
-
+CONFIG_PACKAGE_naiveproxy=y
+CONFIG_PACKAGE_sing-box=y
 # necessary
 CONFIG_BTRFS_PROGS_ZSTD=y
 CONFIG_PACKAGE_attr=y
@@ -87,11 +85,13 @@ CONFIG_PACKAGE_wpa-cli=n
 CONFIG_PACKAGE_wpad-basic=n
 
 #删除不要的插件
+CONFIG_PACKAGE_luci-app-mosdns=n
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-filetransfer=n
 CONFIG_PACKAGE_luci-app-turboacc=n
 CONFIG_PACKAGE_luci-app-arpbind=n
 CONFIG_PACKAGE_luci-app-accesscontrol=n
 CONFIG_PACKAGE_luci-app-upnp=n
-CONFIG_PACKAGE_luci-app-vlmcsd=n
 CONFIG_PACKAGE_luci-app-ddns=n
 CONFIG_PACKAGE_ddns-scripts_aliyun=n
 CONFIG_PACKAGE_ddns-scripts_dnspod=n
