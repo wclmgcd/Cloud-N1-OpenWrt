@@ -23,5 +23,5 @@ mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/
 rm -rf package-temp
 
 
-
+git clone --depth=1 https://github.com/lxiaya/openwrt-homeproxy.git package/openwrt-homeproxy
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
