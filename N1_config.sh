@@ -40,12 +40,13 @@ CONFIG_PACKAGE_kmod-usb3=y
 CONFIG_PACKAGE_luci-app-amlogic=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-app-homeproxy=y
 # other packages
 #CONFIG_PACKAGE_autocore-arm=y
 #CONFIG_PACKAGE_zoneinfo-asia=y
 #CONFIG_PACKAGE_zoneinfo-core=y
 CONFIG_PACKAGE_naiveproxy=y
-CONFIG_PACKAGE_sing-box=y
+
 # necessary
 CONFIG_BTRFS_PROGS_ZSTD=y
 CONFIG_PACKAGE_attr=y
