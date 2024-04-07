@@ -82,7 +82,6 @@ jobs:
       run: |
         cd openwrt
         ./scripts/feeds install -a
-        sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
     - name: Load custom configuration
       run: |
         chmod +x $CONFIG_SH
