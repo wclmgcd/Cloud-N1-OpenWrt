@@ -33,5 +33,5 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 1
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
 mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/
 rm -rf package-temp
-
+git clone https://github.com/muink/homeproxy.git  package/luci-app-homeproxy
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
