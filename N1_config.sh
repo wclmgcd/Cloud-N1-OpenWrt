@@ -40,6 +40,7 @@ CONFIG_PACKAGE_kmod-usb3=y
 CONFIG_PACKAGE_luci-app-amlogic=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-app-homeproxy=y
 
 # other packages
 #CONFIG_PACKAGE_autocore-arm=y
@@ -74,7 +75,7 @@ CONFIG_PACKAGE_mkf2fs=y
 CONFIG_PACKAGE_dosfstools=y
 CONFIG_PACKAGE_uuidgen=y
 CONFIG_PACKAGE_naiveproxy=y
-CONFIG_PACKAGE_sing-box=y
+# CONFIG_PACKAGE_sing-box=y
 
 # wifi
 CONFIG_PACKAGE_hostapd-common=n
@@ -87,6 +88,7 @@ CONFIG_PACKAGE_wpa-cli=n
 CONFIG_PACKAGE_wpad-basic=n
 
 #删除不要的插件
+CONFIG_PACKAGE_luci-app-filetransfer=n
 CONFIG_PACKAGE_luci-app-turboacc=n
 CONFIG_PACKAGE_luci-app-arpbind=n
 CONFIG_PACKAGE_luci-app-accesscontrol=n
