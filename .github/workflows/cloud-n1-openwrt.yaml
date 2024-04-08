@@ -75,7 +75,8 @@ jobs:
         chmod +x $SCRIPT_SH
         ./$SCRIPT_SH
         cd openwrt
-        sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+        echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+        echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
         ./scripts/feeds update -a
 
     - name: Install feeds
