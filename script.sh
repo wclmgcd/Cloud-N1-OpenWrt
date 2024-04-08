@@ -27,7 +27,7 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 1
 # mv -f package-temp/luci-app-passwall2 package/
 # rm -rf package-temp
 
-
+sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
 
 # Add luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
